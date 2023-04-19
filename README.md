@@ -1,6 +1,6 @@
-# pontos_turisticos
+# Pontos 
 
-A new Flutter project.
+Cadastro de Pontos Turísticos
 
 ## Getting Started
 

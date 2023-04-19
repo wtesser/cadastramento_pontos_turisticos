@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pontos_turisticos">
+    package="br.edu.gerenciador_pontos_turisticos.gerenciador_pontos_turisticos">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
    <application
-        android:label="pontos_turisticos"
+        android:label="gerenciador_pontos_turisticos"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -30,5 +32,7 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="API-KEY"/>
     </application>
 </manifest>

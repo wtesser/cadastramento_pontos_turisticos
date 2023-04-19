@@ -1,24 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:pontos_turisticos/pages/filtro_page.dart';
-import 'package:pontos_turisticos/pages/lista_pontos_turisticos.dart';
+import 'package:cadastramento_pontos_turisticos/pages/filtroPage.dart';
+import 'package:cadastramento_pontos_turisticos/pages/listaPontosTuristicos.dart';
 
 void main() {
-  runApp(const AppGerenciadorPontosTuristicos());
+  runApp(const AppPontosTuristicos());
 }
 
-class AppGerenciadorPontosTuristicos extends StatelessWidget {
-  const AppGerenciadorPontosTuristicos({super.key});
+class AppPontosTuristicos extends StatelessWidget {
+  const AppPontosTuristicos({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Cadastramento de Pontos Turísticos',
+      title: 'Pontos Turísticos',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
-        primarySwatch: Colors.blue[800],
+        primarySwatch: Colors.orange,
       ),
-      home: ListaPontosTuristicos(),
+      home: ListaPontosTuristicosPage(),
       routes: {
         FiltroPage.routeName: (BuildContext context) => FiltroPage(),
       },
